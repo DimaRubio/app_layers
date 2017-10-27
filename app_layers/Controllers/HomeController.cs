@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BAL;
 
 namespace app_layers.Controllers
 {
@@ -12,13 +13,13 @@ namespace app_layers.Controllers
 
         public ViewResult Index()
         {
-            var user1 = new UserInformation(1)
-            {
-                FirstName = "Dima",
-                LastName = "Bolyachin"
-            };
-            ViewBag.user = user1;
-            return View(user1);
+            ViewBag.Message = "Hello ASP.NET Core";
+            ViewBag.userName = User.Identity.Name;
+            ViewBag.serverName = Server.MachineName;
+            ViewBag.clientIP = Request.UserHostAddress;
+            ViewBag.dateStamp = HttpContext.Timestamp;
+            var currentUser = new User().GetCurrentUser();
+            return View(currentUser);
         }
     }
 }
