@@ -12,9 +12,12 @@ namespace app_layers.Controllers
 
         public ViewResult Index()
         {
-            var user1 = new UserInformation(1);
-            user1.FirstName = "Dima";
-            user1.LastName = "Bolyachin";
+            var user1 = new UserInformation(1)
+            {
+                FirstName = "Dima",
+                LastName = "Bolyachin"
+            };
+            ViewBag.user = user1;
             return View(user1);
         }
     }

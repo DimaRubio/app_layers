@@ -8,6 +8,6 @@ namespace BAL
 {
     public class User
     {
-        public UserInformation GetCurrentUser();
+        //public userinformation getcurrentuser();
     }
 }
