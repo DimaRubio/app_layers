@@ -1,12 +1,12 @@
 ﻿@*@inherits System.Web.Mvc.WebViewPage*@
 
-@model BAL.UserInformation
+@*@model BAL.UserInformation*@
 
 <body>
     <div> MyNew Page
     </div>
     <div>FirstName: @Model.FirstName </div>
-    <div>LastName: <span style="background:red"> @Model.LastName</span> </div>
+    <div>LastName: <span style="background:@ViewBag.color"> @Model.LastName</span> </div>
     <h3>@ViewBag.Message</h3>
     <h3>@ViewBag.clientIP</h3>
     <h3>@ViewBag.dateStamp</h3>

@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetCategory.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -47,9 +48,13 @@
     <Folder Include="Authentication\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{6cac98ae-28a3-47e0-b4e2-b8c727116a6a}</Project>
-      <Name>DAL</Name>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{61e4ae46-940e-4109-9f78-33cbaf93e654}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{2e01cff7-19f3-4e6f-a63a-9885bf3c3114}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,13 @@
+﻿@model List<Model.CategoryModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index view for GetCategory action</h2>
+<div>@foreach (var item in @Model) {
+    <div>ID: @item.ID</div>
+}
+    </div>
+
+
