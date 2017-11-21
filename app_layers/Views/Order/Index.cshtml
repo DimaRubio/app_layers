@@ -1,0 +1,18 @@
+﻿@model List<Model.OrderModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Orders</h2>
+<div>
+    @foreach (var item in @Model)
+{
+    <div>ID: @item.ID</div>
+    <div>Id oreder: @item.ID_Order</div>
+    <div>profile: @item.ID_Profile</div>
+    <div>state detail: @item.State_Detail</div>
+    <br />
+}
+</div>
+

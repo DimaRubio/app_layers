@@ -7,8 +7,14 @@ using Model;
 
 namespace Domain
 {
-	public interface IQuery<CategoryModel> where CategoryModel : IModel
+	//public interface IQuery<CategoryModel> where CategoryModel : IModel
+	//{
+	//	List<CategoryModel> Execute();
+	//}
+
+	public interface IQuery<TModel> where TModel: IModel
 	{
-		List<CategoryModel> Execute();
+		List<TModel> Get(); // Вроде должен быть ASK, a не execute. execute по идее в ICommand
 	}
+
 }

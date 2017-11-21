@@ -12,13 +12,14 @@ namespace app_layers
         {
 			var container = new UnityContainer();
 			container.RegisterType<IGetCategory, GetCategory>();
-            
-            // register all your components with the container here
-            // it is NOT necessary to register your controllers
-            
-            // e.g. container.RegisterType<ITestService, TestService>();
-            
-            DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+			container.RegisterType<IGetOrder, GetOrder>();
+
+			// register all your components with the container here
+			// it is NOT necessary to register your controllers
+
+			// e.g. container.RegisterType<ITestService, TestService>();
+
+			DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
 }

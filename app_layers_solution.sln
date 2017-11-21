@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{61E4AE46-940E-4109-9F78-33CBAF93E654}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALExecuter", "DALExecuter\DALExecuter.csproj", "{DD48C633-5567-41AF-893A-72F791BFBBA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_Test", "DAL_Test\DAL_Test.csproj", "{584916FE-0DCB-439A-8DDC-3CB79348C124}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{61E4AE46-940E-4109-9F78-33CBAF93E654}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61E4AE46-940E-4109-9F78-33CBAF93E654}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61E4AE46-940E-4109-9F78-33CBAF93E654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD48C633-5567-41AF-893A-72F791BFBBA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD48C633-5567-41AF-893A-72F791BFBBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD48C633-5567-41AF-893A-72F791BFBBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD48C633-5567-41AF-893A-72F791BFBBA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{584916FE-0DCB-439A-8DDC-3CB79348C124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{584916FE-0DCB-439A-8DDC-3CB79348C124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{584916FE-0DCB-439A-8DDC-3CB79348C124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{584916FE-0DCB-439A-8DDC-3CB79348C124}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

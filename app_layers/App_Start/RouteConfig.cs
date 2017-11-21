@@ -18,6 +18,12 @@ namespace app_layers
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-        }
+
+			routes.MapRoute(
+				name: "route1",
+				url: "{controller}/create/{id}/{name}",
+				defaults: new { controller = "Home", action = "create", id = UrlParameter.Optional, name = UrlParameter.Optional }
+			); // должен быть сверху иначе перекроет первый роут, 
+		}
     }
 }

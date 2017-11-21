@@ -19,7 +19,7 @@ namespace app_layers.Controllers
 		// GET: Category
 		public ActionResult GetCategory()
         {
-			var model = getCategory.Execute();
+			var model = getCategory.Get();
             return View("Index", model);
         }
     }

@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Model;
 
 namespace Model
 {
-	public class CategoryModel : IModel
+	public class OrderModel : IModel
 	{
 		public int ID { get; set; }
-		public string Name { get; set; }
-		public string Description { get; set; }
-
+		public int ID_Order { get; set; }
+		public int ID_Profile { get; set; }
+		public string State_Detail { get; set; }
 	}
 }

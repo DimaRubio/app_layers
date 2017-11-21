@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-	//public interface IGetCategory : IQuery<Model.CategoryModel>
-	//{
-
-	//}
-	public interface IGetCategory : IQuery<Model.CategoryModel>
+	public interface IGetOrder : IQuery<Model.OrderModel>
 	{
-
 	}
-
 }

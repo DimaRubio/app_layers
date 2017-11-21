@@ -10,10 +10,11 @@ namespace BAL
 {
 	public class GetCategory : IGetCategory
 	{
-		public List<CategoryModel> Execute()
+		public List<CategoryModel> Get()
 		{
 			var result = new List<CategoryModel>();
-			result.Add(new CategoryModel() { ID = 1 });
+			result.Add(new CategoryModel() { ID = 1, Name = "Outerwear" , Description= "Outerwear lorem insput" });
+			result.Add(new CategoryModel() { ID = 2, Name = "Shoes" , Description= "Shoes lorem insput" });
 			return result;
 			//throw new NotImplementedException();
 		}

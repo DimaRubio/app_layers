@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44544F39-2373-4380-9EE5-58D620FF6CE9}</ProjectGuid>
+    <ProjectGuid>{DD48C633-5567-41AF-893A-72F791BFBBA8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BAL</RootNamespace>
-    <AssemblyName>BAL</AssemblyName>
+    <RootNamespace>DALExecuter</RootNamespace>
+    <AssemblyName>DALExecuter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,23 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GetCategory.cs" />
-    <Compile Include="GetOrder.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="DBExecuter.cs" />
+    <Compile Include="DBMappingFieldAtribute.cs" />
+    <Compile Include="IDBExecuter.cs" />
+    <Compile Include="OderModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Authentication\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{61e4ae46-940e-4109-9f78-33cbaf93e654}</Project>
-      <Name>Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{2e01cff7-19f3-4e6f-a63a-9885bf3c3114}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
